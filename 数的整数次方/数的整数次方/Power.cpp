@@ -2,7 +2,7 @@
 using namespace std;
 #define UP 0.00000001
 #define DONE -0.00000001
-double _power(double base, int expont)
+double _power(double base, size_t expont)
 {
 	if (expont == 0)
 		return 1;
@@ -12,7 +12,7 @@ double _power(double base, int expont)
 double Power(double base, int expont)
 {
 	
-	if (base<UP&&base>DONE)     //先判断基数是否为零
+	if ((base<UP&&base>DONE)&&(expont<0))     //先判断基数是否为零
 	{
 		return 0;
 	}
