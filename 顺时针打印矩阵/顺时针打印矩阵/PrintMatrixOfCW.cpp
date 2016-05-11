@@ -62,6 +62,7 @@ int main()
 		a[i] = arr[i];
 	}
 	PrintMatrixOfCW(a, 4, 4);
+	delete[] a;
 	system("pause");
 	return 0;
 }
