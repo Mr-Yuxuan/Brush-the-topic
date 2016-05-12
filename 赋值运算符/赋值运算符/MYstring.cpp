@@ -1,11 +1,11 @@
 //现代写法：通过值传递调用拷贝构造函数创建一个临时变量实现赋值
-CMyString* operator=(CMystring s)
+CMyString& operator=(CMystring s)
 {
 	swap(m_pData, s.m_pData);
 	return *this;
 }
 //旧写法：存在异常（空间可能开辟失败）
-CMyString* operator=(const CMystring& s)
+CMyString& operator=(const CMystring& s)
 {
 	if (this != &s)                       //判断自赋值
 	{
