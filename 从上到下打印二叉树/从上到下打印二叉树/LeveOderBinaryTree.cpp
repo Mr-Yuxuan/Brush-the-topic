@@ -1,9 +1,8 @@
-//层序遍历
+         //二叉树层序遍历（借用队列）
 void _LevelOder(BinaryNode<T>* root)
 {
 	if (root == NULL)
 		return;
-	//借用队列
 	queue<BinaryNode<T>*> q;
 	q.push(root);
 	while (q.size())
