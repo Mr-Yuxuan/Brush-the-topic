@@ -1,4 +1,4 @@
-  //找出链表的环入口点
+
 ListNode* FindBeginning(ListNode* head)
 {
 	if (head == NULL)
